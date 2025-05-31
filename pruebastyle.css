@@ -1,0 +1,12 @@
+#titulo1, .textoa {
+    background-color: red;
+}
+#titulo2, .textos {
+    background-color: blue;
+}
+article p b{
+    background-color: yellow;
+}
+section p b{
+    background-color: green;
+}

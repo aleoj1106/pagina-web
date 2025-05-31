@@ -1,0 +1,29 @@
+/*
+#titulo  {
+    color: brown;
+}
+
+h1 {
+    background-color: teal;
+    color: white;
+}
+.texto {
+    color: white;
+    background-color: teal;
+}
+    */
+h1, p {
+    background-color: teal;
+}
+#titulo, .texto {
+    color: white;
+}
+section p{
+    color:black
+}
+section p b{
+    color: red;
+}
+section div p b{
+    color: green;
+}
