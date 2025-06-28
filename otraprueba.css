@@ -41,7 +41,7 @@
 
 .cabecera .menu .elementos a:hover {
     font-size: 30px;
-    background-color: rgb(0, 76, 76);
+    background-color: rgba(25, 189, 189, 0.301);
 
 }
 
@@ -138,6 +138,8 @@
     right: 20px;
     top: 23px;
     display: none;
+    cursor: pointer;
+    transition: .5s;
 }
 
 @media (max-width: 700px) {
@@ -145,4 +147,51 @@
     display: block;
 }
 }
-ds
+
+.menu_mobile {
+    right: 0;
+    width: 300px;
+    background-color: rgba(0, 128, 128, 0.377);
+    position:absolute;
+    height: 100vh;
+    backdrop-filter: blur(10px);
+    display:none;
+    margin-right: -300px;
+    transition: .5s;
+
+}
+@media (max-width: 700px) {
+    .menu_mobile {
+        display: block;
+    }
+}
+
+.elementos_mobile {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 25px;
+}
+.elementos_mobile li {
+    padding: 10px 0px;
+    width:100%;
+    list-style: none;
+    
+}
+
+.elementos_mobile li a{
+    color:white;
+    font-size: 30px;
+}
+.elementos_mobile li:hover{
+    background-color: var(--verde-oscuro);
+    color:gray;
+}
+#barras {
+    display: none;
+
+}
+#barras:checked ~ .menu_mobile {
+margin-right: 0;
+    
+}
